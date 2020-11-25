@@ -12,7 +12,7 @@ $(document).ready(
       function() {
         $(this).children("a").css("color", "#191c1f");
         var indexLi = $(this).index();
-        $(dropdownUl[indexLi]).fadeIn("slow");
+        $(dropdownUl[indexLi]).fadeIn("fast");
       }
     );
 
@@ -21,7 +21,7 @@ $(document).ready(
       function() {
         $(this).children("a").css("color", "#b0b1b2");
         var indexLi = $(this).index();
-        $(dropdownUl[indexLi]).fadeOut("fast");
+        $(dropdownUl[indexLi]).fadeOut(200);
       }
     );
 
