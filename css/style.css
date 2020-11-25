@@ -16,6 +16,17 @@
 .float_left {
   float: left;
 }
+.position_relative {
+  position: relative;
+}
+.dropdown_item {
+  position: absolute;
+  left: 0;
+  top: 100px;
+  line-height: 35px;
+  border-radius: 10px;
+  box-shadow: 1px 0px 6px 0px rgba(0, 0, 0, 0.3), -2px 8px 12px rgba(0, 0, 0, 0.2);
+}
 /* utilities */
 
 /* generale */
@@ -73,6 +84,9 @@ header {
 #dropdown_list {
   display: flex;
   justify-content: flex-end;
+}
+#dropdown_list li.position_relative:nth-child(2) .dropdown_item {
+  width: 160px;
 }
 .buttons_section {
   width: 35%;
