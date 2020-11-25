@@ -28,6 +28,9 @@
   border-radius: 10px;
   box-shadow: 1px 0px 6px 0px rgba(0, 0, 0, 0.3), -2px 8px 12px rgba(0, 0, 0, 0.2);
 }
+.dropdown_item a:hover {
+  color: #191c1f;
+}
 .dropdown_item.active {
   display: block;
 }
@@ -39,6 +42,7 @@ ul {
 }
 li {
   padding: 0 20px;
+  cursor: pointer;
 }
 a {
   text-decoration: none;
@@ -46,8 +50,7 @@ a {
   font-weight: 500;
 }
 a:hover {
-  /* text-decoration: none;
-  color: #191c1f; */
+  text-decoration: none;
 }
 /* /generale */
 
@@ -69,9 +72,9 @@ header {
   width: 30px;
   vertical-align: middle;
 }
-#intro_list a.active {
+/* #intro_list a.active {
   color: #191c1f;
-}
+} */
 /* /header left */
 
 /* header right */

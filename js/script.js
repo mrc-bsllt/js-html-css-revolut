@@ -1,22 +1,29 @@
 $(document).ready(
   function() {
 
-    // quando vado in hover sugli a, devono cambiare colore e non avere il text decoration
-    $("a").mouseenter(
+    // le <a> che hanno la classe active devono avere questo colore sempre
+    $("a.active").css("color", "#191c1f");
+
+    // tutti gli ul che sono dei dropdown
+    var dropdownUl = $("ul.dropdown_item");
+
+    // quando vado sopra con il mouse alla li che contiene il dropdown menu
+    $("li.position_relative").mouseenter(
       function() {
-        $(this).css({
-          'color': '#191c1f',
-          'textDecoration': 'none'
-        });
+        $(this).children("a").css("color", "#191c1f");
+        var indexLi = $(this).index();
+        $(dropdownUl[indexLi]).fadeIn("slow");
       }
     );
 
-    $("a").mouseleave(
+    // quando sposto il mouse dalla li che contiene il dropdown menu
+    $("li.position_relative").mouseleave(
       function() {
-        $(this).css("color", "#b0b1b2");
+        $(this).children("a").css("color", "#b0b1b2");
+        var indexLi = $(this).index();
+        $(dropdownUl[indexLi]).fadeOut("fast");
       }
     );
-
 
   }
 );
