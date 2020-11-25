@@ -19,6 +19,9 @@
 .position_relative {
   position: relative;
 }
+.position_relative li {
+  line-height: 45px;
+}
 .dropdown_item {
   display: none;
   position: absolute;
@@ -45,6 +48,7 @@
 
 /* generale */
 h4 {
+  margin-bottom: 20px;
   text-transform: uppercase;
   display: inline-block;
   font-size: 12px;
@@ -114,6 +118,9 @@ header {
 .pagamenti,
 .extra {
   width: 25%;
+}
+ul.deep_list li {
+  padding: 0;
 }
 #dropdown_list li.position_relative:nth-child(2) .dropdown_item {
   width: 160px;
