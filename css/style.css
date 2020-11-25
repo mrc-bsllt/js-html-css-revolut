@@ -41,8 +41,9 @@ a:hover {
 header {
   height: 100px;
 }
+/* header left */
 .header_left {
-  width: 40%;
+  width: 30%;
   height: 100px;
   line-height: 100px;
 }
@@ -56,9 +57,38 @@ header {
 #intro_list a.active {
   color: #191c1f;
 }
+/* /header left */
+
+/* header right */
 .header_right {
-  width: 60%;
+  display: flex;
+  width: 70%;
   height: 100px;
   line-height: 100px;
 }
+.list_section {
+  width: 65%;
+  height: 100%;
+}
+#dropdown_list {
+  display: flex;
+  justify-content: flex-end;
+}
+.buttons_section {
+  width: 35%;
+  height: 100%;
+  text-align: right;
+}
+.buttons_section button {
+  font-weight: 500;
+}
+.buttons_section button:first-child {
+  color: #191c1f;
+  background-color: rgba(25, 28, 31, 0.16);
+}
+.buttons_section button:last-child {
+  color: #ffffff;
+  background-color: #191c1f;
+}
+/* /header right */
 /* /header */
