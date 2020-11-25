@@ -28,15 +28,27 @@
   border-radius: 10px;
   box-shadow: 1px 0px 6px 0px rgba(0, 0, 0, 0.3), -2px 8px 12px rgba(0, 0, 0, 0.2);
 }
+.dropdown_item.active {
+  display: block;
+}
 .dropdown_item a:hover {
   color: #191c1f;
 }
-.dropdown_item.active {
-  display: block;
+.dropdown_item i {
+  color: #ffffff;
+  background-color: #b0b1b2;
+  padding: 5px;
+  border-radius: 50%;
+  vertical-align: middle;
 }
 /* utilities */
 
 /* generale */
+h4 {
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 12px;
+}
 ul {
   list-style: none;
 }
@@ -91,6 +103,17 @@ header {
 #dropdown_list {
   display: flex;
   justify-content: flex-end;
+}
+#dropdown_list li.position_relative:nth-child(1) .dropdown_item {
+  left: -285px;
+  width: 1020px;
+  padding: 10px;
+}
+.conto,
+.investimenti,
+.pagamenti,
+.extra {
+  width: 25%;
 }
 #dropdown_list li.position_relative:nth-child(2) .dropdown_item {
   width: 160px;
