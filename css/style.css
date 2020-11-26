@@ -27,6 +27,7 @@
   position: absolute;
   left: 0;
   top: 80px;
+  width: max-content;
   line-height: 35px;
   border-radius: 10px;
   box-shadow: 1px 0px 6px 0px rgba(0, 0, 0, 0.3), -2px 8px 12px rgba(0, 0, 0, 0.2);
@@ -69,7 +70,6 @@ a:hover {
   text-decoration: none;
 }
 /* /generale */
-
 
 /* header */
 header {
@@ -118,15 +118,6 @@ header {
 }
 ul.deep_list li {
   padding: 0;
-}
-#dropdown_list li.position_relative:nth-child(2) .dropdown_item {
-  width: 160px;
-}
-#dropdown_list li.position_relative:nth-child(3) .dropdown_item {
-  width: 200px;
-}
-#dropdown_list li.position_relative:nth-child(4) .dropdown_item {
-  width: 170px;
 }
 .buttons_section {
   width: 35%;

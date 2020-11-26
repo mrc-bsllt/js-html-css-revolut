@@ -6,7 +6,7 @@ $(document).ready(
     // tutti gli ul che sono dei dropdown
     var dropdownItem = $(".dropdown_item");
     // tutti gli li che hanno classe position_relative
-    var liPositionRelative = $("li.position_relative");
+    var liPositionRelative = $("#dropdown_list li.position_relative");
     // VERSIONE CON IL MOUSE ALL'HOVER--------------------------------
 
     // quando vado sopra con il mouse alla li che contiene il dropdown menu
